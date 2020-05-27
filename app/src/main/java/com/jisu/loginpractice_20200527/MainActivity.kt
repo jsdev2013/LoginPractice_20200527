@@ -21,5 +21,19 @@ class MainActivity : AppCompatActivity() {
             val inputContent = contentEdit.text.toString()
             eventBtn.text = inputContent
         }
+
+        loginBtn.setOnClickListener {
+            val inputEmail = idEdit.text.toString()
+            val inputPw = pwEdit.text.toString()
+
+            if (inputEmail == "admin@test.com" && inputPw == "qwer") {
+                Log.d("로그인 확인","관리자 맞음")
+                Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
+            } else {
+                Log.d("아이디확인","관리자 아님")
+                Toast.makeText(this, "관리자 실패했습니다.", Toast.LENGTH_SHORT).show()
+            }   
+
+        }
     }
 }
