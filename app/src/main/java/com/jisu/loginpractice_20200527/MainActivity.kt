@@ -1,5 +1,6 @@
 package com.jisu.loginpractice_20200527
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "관리자 실패했습니다.", Toast.LENGTH_SHORT).show()
             }   
 
+        }
+
+        signUpBtn.setOnClickListener {
+            val myIntent = Intent(this, SignUpActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }
