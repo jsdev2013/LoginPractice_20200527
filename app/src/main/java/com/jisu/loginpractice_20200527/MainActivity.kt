@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d("로그인 확인","관리자 맞음")
                 Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
             } else {
-                Log.d("아이디확인","관리자 아님")
+                Log.d("아이디 확인","관리자 아님")
                 Toast.makeText(this, "관리자 실패했습니다.", Toast.LENGTH_SHORT).show()
             }   
 
