@@ -21,4 +21,6 @@
         android:hint="내용 입력"
         android:singleLine="true"/>
 
+
+
 </LinearLayout>
